@@ -1,0 +1,9 @@
+# Ignore large data files
+data/
+
+# Ignore temporary files
+*.txt
+retry.py
+__pycache__/
+*.pyc
+.env
