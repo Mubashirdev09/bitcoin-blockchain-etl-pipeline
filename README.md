@@ -260,4 +260,4 @@ This project is licensed under the MIT License.
 
 **Syed Abdul Rahman**
 - GitHub: [@Mubashirdev09](https://github.com/Mubashirdev09)
-- LinkedIn: [linkedin.com/in/syed-abdul-rahman](https://linkedin.com/in/syed-abdul-rahman)
+- LinkedIn: [linkedin.com/in/rahman09](https://linkedin.com/in/rahman09)
