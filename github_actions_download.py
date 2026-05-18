@@ -13,8 +13,7 @@ CLIENT_SECRET = os.environ.get("AZURE_CLIENT_SECRET")
 TENANT_ID = os.environ.get("AZURE_TENANT_ID")
 CONN_STR = os.environ.get("AZURE_STORAGE_CONNECTION_STRING")
 SYNAPSE_WORKSPACE = "btc-etl-synapse"
-PIPELINE_NAME = "btc_etl_pipeline_auto"
-
+PIPELINE_NAME = "Pipeline 1btc_etl_pipeline_auto"
 # -----------------------------------------
 # STEP 1: Download Bitcoin data from AWS
 # -----------------------------------------
