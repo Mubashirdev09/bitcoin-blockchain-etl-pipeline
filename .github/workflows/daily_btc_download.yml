@@ -1,0 +1,29 @@
+name: Daily Bitcoin Data Download
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # runs every day at midnight UTC
+  workflow_dispatch:       # allows manual trigger from GitHub UI
+
+jobs:
+  download-btc-data:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: |
+          pip install pandas pyarrow azure-storage-blob requests
+
+      - name: Download and upload Bitcoin data
+        env:
+          AZURE_STORAGE_CONNECTION_STRING: ${{ secrets.AZURE_STORAGE_CONNECTION_STRING }}
+        run: |
+          python github_actions_download.py
